@@ -9,7 +9,7 @@ export default function NavBar() {
 
   return (
     <>
-      <div className='bg-[#0F766E] rounded-b-lg flex justify-between items-center py-1 px-6'>
+      <div className={` ${ON ? '' : 'rounded-b-lg'} bg-[#0F766E] relative z-50 flex justify-between items-center py-1 px-6 ` }>
         <div className=''>
           <Link to='/'><img src={Logo} alt="" width='50PX' /></Link>
 
@@ -48,9 +48,15 @@ export default function NavBar() {
           </svg>
         </div>
       </div>
-      <div className={`${ON ? 'flex' : 'hidden'} w-5 h-5 bg-[#0F766E] `}>
+      <div className={`
+    w-4/5 min-h-screen bg-[#0F766E] 
+    fixed top-0 left-0 
+    transform transition-transform duration-300 ease-in-out
+    ${ON ? 'translate-x-0' : '-translate-x-full'}
+  `}>
 
       </div>
+      <h1>hello world</h1>
     </>
   )
 }
