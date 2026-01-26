@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <>
       <NavBar/>
-      <div>
-        
+      <div className=''>
+        d
       </div>
     </>
   )
