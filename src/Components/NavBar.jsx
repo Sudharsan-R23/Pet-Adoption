@@ -2,6 +2,8 @@ import { useState, React } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/Logo/bird.png';
 import styles from '../Styles/NavBar.module.css';
+import { TiSocialYoutube } from "react-icons/ti";
+import { FaSquareInstagram, FaEarthAmericas } from "react-icons/fa6";
 
 export default function NavBar() {
 
@@ -10,7 +12,7 @@ export default function NavBar() {
 
   return (
     <>
-      <div className={` ${ON ? '' : 'rounded-b-lg'} bg-[#0F766E] relative z-50 flex justify-between items-center py-1 px-6 `}>
+      <div className={` ${ON ? '' : 'rounded-b-lg'} bg-[#0F766E] [text-shadow:0_2px_4px_rgba(0,0,0,0.6)] relative z-50 flex justify-between items-center py-1 px-6 `}>
         <div className=''>
           <Link to='/'><img src={Logo} alt="" width='50PX' /></Link>
 
@@ -50,15 +52,10 @@ export default function NavBar() {
         </div>
       </div>
 
-      <div className={`
-    w-4/5 min-h-screen bg-[#0F766E] 
-    fixed top-0 left-0  flex 
-    transform transition-transform duration-300 ease-in-out text-white
-    ${ON ? 'translate-x-0' : '-translate-x-full'}
-       `}>
+      <div className={`w-4/5 min-h-screen bg-[#0F766E] [text-shadow:0_2px_4px_rgba(0,0,0,0.6)] fixed top-0 left-0  flex transform transition-transform duration-300 ease-in-out text-white ${ON ? 'translate-x-0' : '-translate-x-full'}`}>
 
         <div className='flex flex-col  font-sans gap-8 mt-28 ml-10'>
-          <Link to="/" className="text-2xl font-medium">HOSPITAL</Link>
+          <Link to="/" className="text-2xl font-medium ">HOSPITAL</Link>
           <Link to="/new" className="text-2xl font-medium">NEWS</Link>
           <Link to="/contact" className="text-2xl font-medium">CONTACT</Link>
 
@@ -67,16 +64,22 @@ export default function NavBar() {
               SHOP
             </div>
             <div className={`ml-7 border-l-2 pl-2  mt-4 flex flex-col gap-7 overflow-hidden transition-all duration-500 ease-in-out
-      ${ShopItem ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'} 
-    `}
+            ${ShopItem ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'} `}
             >
               <Link className='font-normal' to="/">Food</Link>
               <Link className='font-normal' to="/">Toys</Link>
               <Link className='font-normal' to="/">Durgs</Link>
             </div>
           </div>
-              
+          <div className='mt-10 flex flex-col gap-5'>
+            <TiSocialYoutube className='text-white text-4xl' />
+            <FaSquareInstagram className='text-white text-4xl' />
+            <FaEarthAmericas className='text-white text-4xl'/>
+          </div>
         </div>
+
+
+
       </div>
 
     </>
