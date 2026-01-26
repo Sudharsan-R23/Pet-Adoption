@@ -7,6 +7,11 @@ import { FaSquareInstagram, FaEarthAmericas } from "react-icons/fa6";
 
 export default function NavBar() {
 
+    const openLink = (url) => {
+    window.open(url, '_blank', 'noopener,noreferrer')
+  }
+
+
   const [ON, setOn] = useState(false);
   const [ShopItem, setShopItem] = useState(false);
 
@@ -72,9 +77,9 @@ export default function NavBar() {
             </div>
           </div>
           <div className='mt-10 flex flex-col gap-5'>
-            <TiSocialYoutube className='text-white text-4xl' />
-            <FaSquareInstagram className='text-white text-4xl' />
-            <FaEarthAmericas className='text-white text-4xl'/>
+            <TiSocialYoutube onClick={()=>{openLink('https://www.youtube.com/@incredibleanimal9406')}} className='text-white text-4xl' />
+            <FaSquareInstagram onClick={()=>{openLink('https://www.instagram.com/')}} className='text-white text-4xl' />
+            <FaEarthAmericas  onClick={()=>{openLink('https://a-z-animals.com/animals/')}} className='text-white text-4xl'/>
           </div>
         </div>
 
