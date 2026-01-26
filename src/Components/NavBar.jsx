@@ -4,12 +4,13 @@ import Logo from '../assets/Logo/bird.png';
 import styles from '../Styles/NavBar.module.css';
 
 export default function NavBar() {
- 
+
   const [ON, setOn] = useState(false);
+  const [ShopItem, setShopItem] = useState(false);
 
   return (
     <>
-      <div className={` ${ON ? '' : 'rounded-b-lg'} bg-[#0F766E] relative z-50 flex justify-between items-center py-1 px-6 ` }>
+      <div className={` ${ON ? '' : 'rounded-b-lg'} bg-[#0F766E] relative z-50 flex justify-between items-center py-1 px-6 `}>
         <div className=''>
           <Link to='/'><img src={Logo} alt="" width='50PX' /></Link>
 
@@ -33,7 +34,7 @@ export default function NavBar() {
           <Link to="/new" className="hover:text-[#6EE7B7]">NEWS</Link>
           <Link to="/contact" className="hover:text-[#6EE7B7]">CONTACT</Link>
         </div>
-        <div onClick={()=>{setOn(!ON)}} className={`${styles.nav} hidden max-sm:flex`}>
+        <div onClick={() => { setOn(!ON) }} className={`${styles.nav} hidden max-sm:flex`}>
           <input type="checkbox" className={styles.checkbox} />
 
           <svg className={styles.icon} viewBox="0 0 100 56">
@@ -48,15 +49,36 @@ export default function NavBar() {
           </svg>
         </div>
       </div>
+
       <div className={`
     w-4/5 min-h-screen bg-[#0F766E] 
-    fixed top-0 left-0 
-    transform transition-transform duration-300 ease-in-out
+    fixed top-0 left-0  flex 
+    transform transition-transform duration-300 ease-in-out text-white
     ${ON ? 'translate-x-0' : '-translate-x-full'}
-  `}>
+       `}>
 
+        <div className='flex flex-col  font-sans gap-8 mt-28 ml-10'>
+          <Link to="/" className="text-2xl font-medium">HOSPITAL</Link>
+          <Link to="/new" className="text-2xl font-medium">NEWS</Link>
+          <Link to="/contact" className="text-2xl font-medium">CONTACT</Link>
+
+          <div className="text-2xl font-medium">
+            <div onClick={() => { setShopItem(!ShopItem) }} className=" ">
+              SHOP
+            </div>
+            <div className={`ml-7 border-l-2 pl-2  mt-4 flex flex-col gap-7 overflow-hidden transition-all duration-500 ease-in-out
+      ${ShopItem ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'} 
+    `}
+            >
+              <Link className='font-normal' to="/">Food</Link>
+              <Link className='font-normal' to="/">Toys</Link>
+              <Link className='font-normal' to="/">Durgs</Link>
+            </div>
+          </div>
+              
+        </div>
       </div>
-     
+
     </>
   )
 }
