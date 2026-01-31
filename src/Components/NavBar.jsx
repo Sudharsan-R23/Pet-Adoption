@@ -7,7 +7,7 @@ import { FaSquareInstagram, FaEarthAmericas } from "react-icons/fa6";
 
 export default function NavBar() {
 
-    const openLink = (url) => {
+  const openLink = (url) => {
     window.open(url, '_blank', 'noopener,noreferrer')
   }
 
@@ -24,22 +24,22 @@ export default function NavBar() {
         </div>
         <div className='flex font-sans text-[#FFFFFF] max-sm:hidden gap-7'>
           <div className="relative group">
-            <span className="cursor-pointer hover:text-[#6EE7B7] transition duration-300">
+            <span className={` ${styles.customCursor}   hover:text-[#6EE7B7] transition duration-300 `}>
               SHOP
             </span>
 
-            <ul className="absolute shadow left-0 mt-2 w-44 bg-white text-black rounded shadow-lg
+            <ul className={`   absolute shadow left-0 mt-2  bg-white text-black rounded shadow-lg
                  opacity-0 invisible group-hover:opacity-100 group-hover:visible
-                 transition-all duration-300 delay-150">
-              <li className="px-4 py-2 hover:bg-gray-200 hover:cursor-pointer hover:rounded transition"><Link to="/">Food</Link></li>
-              <li className="px-4 py-2 hover:bg-gray-200 hover:cursor-pointer transition"><Link to="/">Toys</Link></li>
-              <li className="px-4 py-2 hover:bg-gray-200 hover:cursor-pointer hover:rounded transition"><Link to="/">Drugs</Link></li>
+                 transition-all duration-300 delay-150 `}>
+              <li className={`    px-4 py-2 hover:bg-gray-200  hover:rounded transition `}><Link to="/">Food</Link></li>
+              <li className={`   px-4 py-2 hover:bg-gray-200  hover:rounded  `}><Link to="/">Toys</Link></li>
+              <li className={`   px-4 py-2 hover:bg-gray-200  hover:rounded transition `}><Link to="/">Medicines</Link></li>
             </ul>
           </div>
 
-          <Link to="/" className="hover:text-[#6EE7B7]">HOSPITAL</Link>
-          <Link to="/new" className="hover:text-[#6EE7B7]">NEWS</Link>
-          <Link to="/contact" className="hover:text-[#6EE7B7]">CONTACT</Link>
+          <Link to="/" className={`${styles.customCursor } hover:text-[#6EE7B7]`}>HOSPITAL</Link>
+          <Link to="/new" className={`${styles.customCursor } hover:text-[#6EE7B7]`}>NEWS</Link>
+          <Link to="/contact" className={`${styles.customCursor } hover:text-[#6EE7B7]`}>CONTACT</Link>
         </div>
         <div onClick={() => { setOn(!ON) }} className={`${styles.nav} hidden max-sm:flex`}>
           <input type="checkbox" className={styles.checkbox} />
@@ -60,9 +60,9 @@ export default function NavBar() {
       <div className={`w-4/5 min-h-screen bg-[#0F766E] [text-shadow:0_2px_4px_rgba(0,0,0,0.6)] fixed top-0 left-0  flex transform transition-transform duration-300 ease-in-out text-white ${ON ? 'translate-x-0' : '-translate-x-full'}`}>
 
         <div className='flex flex-col  font-sans gap-8 mt-28 ml-10'>
-          <Link to="/" className="text-2xl font-medium ">HOSPITAL</Link>
-          <Link to="/new" className="text-2xl font-medium">NEWS</Link>
-          <Link to="/contact" className="text-2xl font-medium">CONTACT</Link>
+          <Link to="/" className={` text-2xl font-medium `}>HOSPITAL</Link>
+          <Link to="/new" className={` text-2xl font-medium `}>NEWS</Link>
+          <Link to="/contact" className={` text-2xl font-medium `}>CONTACT</Link>
 
           <div className="text-2xl font-medium">
             <div onClick={() => { setShopItem(!ShopItem) }} className=" ">
@@ -73,13 +73,13 @@ export default function NavBar() {
             >
               <Link className='font-normal' to="/">Food</Link>
               <Link className='font-normal' to="/">Toys</Link>
-              <Link className='font-normal' to="/">Durgs</Link>
+              <Link className='font-normal' to="/">Medicines</Link>
             </div>
           </div>
           <div className='mt-10 flex flex-col gap-5'>
-            <TiSocialYoutube onClick={()=>{openLink('https://www.youtube.com/@incredibleanimal9406')}} className='text-white text-4xl' />
-            <FaSquareInstagram onClick={()=>{openLink('https://www.instagram.com/')}} className='text-white text-4xl' />
-            <FaEarthAmericas  onClick={()=>{openLink('https://a-z-animals.com/animals/')}} className='text-white text-4xl'/>
+            <TiSocialYoutube onClick={() => { openLink('https://www.youtube.com/@incredibleanimal9406') }} className='text-white text-4xl' />
+            <FaSquareInstagram onClick={() => { openLink('https://www.instagram.com/') }} className='text-white text-4xl' />
+            <FaEarthAmericas onClick={() => { openLink('https://a-z-animals.com/animals/') }} className='text-white text-4xl' />
           </div>
         </div>
 
