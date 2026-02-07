@@ -2,3 +2,6 @@
     left:30px;
     top:40px
 }
+.customCursor {
+  cursor: url('/feline-track.png') , auto;
+}

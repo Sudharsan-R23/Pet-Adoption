@@ -13,8 +13,8 @@ export default function Home() {
           <div className={`${styles.Itemstxt} absolute inset-0 flex flex-col justify-between p-10`}>
             <h1 className={`text-6xl`}>hello world</h1>
             <div className={``}>
-              <button className="bg-green-500 px-9 py-5 mr-7">Adaptation</button>
-              <button className="bg-green-500 px-9 py-5">Donate</button>
+              <button className={` ${styles.customCursor} bg-[#0F766E] text-2xl uppercase text-white px-9 max-[1024px]:py-3 max-[768px]:text-xl max-[1024px]:px-3 py-5 rounded-xl mr-7`}>Adaptation</button>
+              <button className={` ${styles.customCursor} bg-[#0F766E] text-2xl uppercase text-white px-9 max-[1024px]:py-3 max-[768px]:text-xl max-[1024px]:px-3 py-5 rounded-xl mr-7`}>Donate</button>
             </div>
 
 
