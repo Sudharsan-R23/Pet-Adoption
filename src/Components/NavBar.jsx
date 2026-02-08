@@ -106,7 +106,7 @@ export default function NavBar() {
             </div>
           </div>
 
-          <div className="mt-10 flex gap-6">
+          <div className="mt-10 flex flex-col gap-6">
             <TiSocialYoutube
               onClick={() => openLink('https://www.youtube.com/@incredibleanimal9406')}
               className="text-4xl cursor-pointer"

@@ -57,3 +57,6 @@
 .hidden {
   display: none;
 }
+.customCursor {
+  cursor: url('/feline-track.png') 16 16 , auto;
+}
