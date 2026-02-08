@@ -84,13 +84,13 @@ export default function NavBar() {
         ${menuOpen ? 'translate-x-0' : '-translate-x-full'}`}
       >
         <div className="mt-24 ml-8 flex flex-col gap-8 font-sans">
-          <Link to="/" className="text-2xl">HOSPITAL</Link>
-          <Link to="/new" className="text-2xl">NEWS</Link>
-          <Link to="/contact" className="text-2xl">CONTACT</Link>
+          <Link to="/" className="text-2xl  [text-shadow:0_2px_4px_rgba(0,0,0,0.6)]">HOSPITAL</Link>
+          <Link to="/new" className="text-2xl  [text-shadow:0_2px_4px_rgba(0,0,0,0.6)]">NEWS</Link>
+          <Link to="/contact" className="text-2xl  [text-shadow:0_2px_4px_rgba(0,0,0,0.6)]">CONTACT</Link>
           <div>
             <button
               onClick={() => setShopOpen(!shopOpen)}
-              className="text-2xl"
+              className="text-2xl  [text-shadow:0_2px_4px_rgba(0,0,0,0.6)]"
             >
               SHOP
             </button>
