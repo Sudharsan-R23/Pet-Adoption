@@ -60,13 +60,22 @@ export default function NavBar() {
             CONTACT
           </Link>
         </div>
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className={`${styles.nav} sm:hidden`}
-          aria-label="Toggle Menu"
-        >
-          <span className={`${menuOpen ? styles.open : ''}`} />
-        </button>
+         <div onClick={() => { setMenuOpen(!menuOpen) }} className={`${styles.nav} hidden max-sm:flex`}>
+          <input type="checkbox" className={styles.checkbox} />
+
+          <svg className={styles.icon} viewBox="0 0 100 56">
+            <use href="#menu" className={styles.line1} />
+            <use href="#menu" className={styles.line2} />
+          </svg>
+
+          <svg className={styles.hidden}>
+            <symbol viewBox="0 0 100 56" id="menu">
+              <path d="M48.33,45.6H18a14.17,14.17,0,0,1,0-28.34H78.86a17.37,17.37,0,0,1,0,34.74H42.33l-21-21.26L47.75,4" />
+            </symbol>
+          </svg>
+        </div>
+  
+
       </nav>
       <aside
         className={`fixed top-0 left-0 h-screen w-4/5 bg-[#0F766E]

@@ -1,48 +1,59 @@
-
 .nav {
   width: 40px;
-  height: 40px;
+  height: 56px;
   position: relative;
+  
+  justify-content: center;
+  align-items: center;
 }
 
-.nav span,
-.nav span::before,
-.nav span::after {
+.checkbox {
   position: absolute;
   width: 100%;
-  height: 4px;
-  background: white;
-  left: 0;
-  transition: 0.3s;
-  content: '';
+  height: 100%;
+  opacity: 0;
+  
+  z-index: 10;
 }
 
-
-.nav span {
-  top: 50%;
-  transform: translateY(-50%);
+.icon {
+  fill: none;
+  stroke: white;
+  stroke-width: 7px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
-.nav span::before {
-  top: -10px;
+.line1 {
+  stroke-dashoffset: 221;
+  stroke-dasharray: 46 249;
+  transition: all .2s ease;
 }
 
-.nav span::after {
-  top: 10px;
+.checkbox:checked + .icon .line1 {
+  stroke-dashoffset: 175;
+  stroke-dasharray: 0 295;
+  opacity: 0;
 }
 
-.open {
-  background: transparent;
+.line2 {
+  animation: reverseStroke 1.2s ease-out forwards;
 }
 
-.open::before {
-  transform: rotate(45deg) translate(5px, 5px);
+.checkbox:checked + .icon .line2 {
+  animation: stroke 1.2s ease-out forwards;
 }
 
-.open::after {
-  transform: rotate(-45deg) translate(5px, -5px);
+@keyframes stroke {
+  0% { stroke-dashoffset: 295; stroke-dasharray: 25 270; }
+  100% { stroke-dashoffset: 68; stroke-dasharray: 59 236; }
 }
 
-.customCursor {
-  cursor: url('/feline-track.png'), auto;
+@keyframes reverseStroke {
+  0% { stroke-dashoffset: 68; stroke-dasharray: 59 236; }
+  100% { stroke-dashoffset: 290; stroke-dasharray: 25 270; }
+}
+
+.hidden {
+  display: none;
 }
