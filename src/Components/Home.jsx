@@ -20,8 +20,8 @@ export default function Home() {
               />
 
               <div className="absolute inset-0 flex flex-col justify-between p-5 sm:p-8 lg:p-10">
-                <h1 className="text-3xl sm:text-4xl lg:text-6xl text-white">
-                  hello world
+                <h1 className={`${styles.slideLoop  } text-2xl sm:text-6xl text-white [text-shadow:0_2px_4px_rgba(0,0,0,0.6)] font-bold`}>
+                  Meet Your New Best Friend❤️
                 </h1>
 
                 <div className="flex flex-col  sm:flex-row gap-4">

@@ -4,3 +4,26 @@
 
 .imgB{
 box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;}
+
+.slideLoop {
+  display: inline-block;
+  animation: slideLoop 5s ease-in-out infinite;
+}
+
+@keyframes slideLoop {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+}
