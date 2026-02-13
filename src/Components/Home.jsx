@@ -20,38 +20,18 @@ export default function Home() {
               />
 
               <div className="absolute inset-0 flex flex-col justify-between p-5 sm:p-8 lg:p-10">
-                <h1 className={`${styles.slideLoop  } text-2xl sm:text-6xl text-white [text-shadow:0_2px_4px_rgba(0,0,0,0.6)] font-bold`}>
+                <h1 className={`${styles.slideLoop} text-2xl sm:text-6xl text-white [text-shadow:0_2px_4px_rgba(0,0,0,0.6)] font-bold`}>
                   Meet Your New Best Friend❤️
                 </h1>
 
                 <div className="flex flex-col  sm:flex-row gap-4">
                   <button
-                    className={`${styles.customCursor}   bg-[#0F766E] text-white uppercase
-  text-lg sm:text-xl
-  px-6 py-3 sm:px-9 sm:py-5
-  rounded-xl border-4 border-[#0F766E]
-  font-semibold
-  transition-colors transition-transform duration-300 ease-in-out
-  hover:bg-white hover:text-[#0F766E]
-  hover:-translate-y-1 hover:shadow-xl
-  active:translate-y-0 [text-shadow:0_2px_4px_rgba(0,0,0,0.6)]`}
-                  >
-                    Adaptation
-                  </button>
+                    className={`${styles.customCursor}   bg-[#0F766E] text-white uppercase text-lg sm:text-xl px-6 py-3 sm:px-9 sm:py-5 rounded-xl border-4 border-[#0F766E] font-semibold transition-colors transition-transform duration-300 ease-in-out hover:bg-white hover:text-[#0F766E] hover:-translate-y-1 hover:shadow-xl active:translate-y-0 [text-shadow:0_2px_4px_rgba(0,0,0,0.6)]`}
+                  >Adaptation</button>
 
                   <button
-                    className={`${styles.customCursor}   bg-[#0F766E] text-white uppercase
-  text-lg sm:text-xl
-  px-6 py-3 sm:px-9 sm:py-5
-  rounded-xl border-4 font-semibold border-[#0F766E]
-    [text-shadow:0_2px_4px_rgba(0,0,0,0.6)]
-  transition-colors transition-transform duration-300 ease-in-out
-  hover:bg-white hover:text-[#0F766E]
-  hover:-translate-y-1 hover:shadow-xl
-  active:translate-y-0`}
-                  >
-                    Donate
-                  </button>
+                    className={`${styles.customCursor}   bg-[#0F766E] text-white uppercase text-lg sm:text-xl px-6 py-3 sm:px-9 sm:py-5 rounded-xl border-4 font-semibold border-[#0F766E] [text-shadow:0_2px_4px_rgba(0,0,0,0.6)] transition-colors transition-transform duration-300 ease-in-out hover:bg-white hover:text-[#0F766E] hover:-translate-y-1 hover:shadow-xl active:translate-y-0`}
+                  >Donate</button>
                 </div>
               </div>
 
