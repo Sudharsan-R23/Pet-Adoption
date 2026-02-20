@@ -39,14 +39,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div>
-          <div className={` m-10`}>
-            <div className={`flex gap-2 `}>
+        <div className={` m-12`}>
+          <div className={` m-12`}>
+            <div className={`flex gap-5 ${styles.InPara} `}>
               <div>
                 <h1>hjjhhj</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo exercitationem corporis unde consequatur iure quas repellat? Minus dolorem enim fugiat. Quisquam facilis error ullam nulla vero deleniti debitis illo natus beatae architecto eos odio deserunt delectus dignissimos, inventore consectetur laudantium tempore magnam porro officiis quo rerum. Itaque placeat repellat labore neque doloremque, dolor nihil. Similique dignissimos tempore aliquid vero fuga eius accusamus itaque provident, dolor molestiae labore, laboriosam alias placeat et unde? Numquam quibusdam, unde, praesentium laborum laudantium ab error aspernatur aliquam doloribus dicta dolor voluptatibus assumenda consequatur, saepe veritatis quasi. Qui iure vel suscipit aspernatur a totam, mollitia aliquam ducimus architecto illum sunt et blanditiis laudantium voluptatem repellendus similique cum natus dolore neque quasi vitae incidunt. Culpa eaque nesciunt minus quam nisi iusto sed maxime provident optio ea, eligendi sunt laudantium, similique officia, veritatis veniam quasi voluptates error id ex nam. Quae quisquam architecto nemo consequatur! Deleniti fuga corporis voluptatum, eaque neque nulla non voluptatem inventore totam. Dignissimos illum distinctio obcaecati soluta velit alias quam? Sint id odit saepe. Neque laborum rem ducimus? Neque debitis nihil ipsa sunt iste? Sapiente cumque praesentium eaque aperiam molestias ipsa neque veniam voluptate, quisquam quae ipsum assumenda beatae soluta excepturi quos perspiciatis debitis!</p>
+                <p className={`text-justify`}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo exercitationem corporis unde consequatur iure quas repellat? Minus dolorem enim fugiat. Quisquam facilis error ullam nulla vero deleniti debitis illo natus beatae architecto eos odio deserunt delectus dignissimos, inventore consectetur laudantium tempore magnam porro officiis quo rerum. Itaque placeat repellat labore neque doloremque, dolor nihil. Similique dignissimos tempore aliquid vero fuga eius accusamus itaque provident, dolor molestiae labore, laboriosam alias placeat et unde? Numquam quibusdam, unde, praesentium laborum laudantium ab error aspernatur aliquam doloribus dicta dolor voluptatibus assumenda consequatur, saepe veritatis quasi. Qui iure vel suscipit aspernatur a totam, mollitia aliquam ducimus architecto illum sunt et blanditiis laudantium voluptatem repellendus similique cum natus dolore neque quasi vitae incidunt. Culpa eaque nesciunt minus quam nisi iusto sed maxime provident optio ea, eligendi sunt laudantium, similique officia, veritatis veniam quasi voluptates error id ex nam. Quae quisquam architecto nemo consequatur! Deleniti fuga corporis voluptatum, eaque neque nulla non voluptatem inventore totam. Dignissimos illum distinctio obcaecati soluta velit alias quam? Sint id odit saepe. Neque laborum rem ducimus? Neque debitis nihil ipsa sunt iste? Sapiente cumque praesentium eaque aperiam molestias ipsa neque veniam voluptate, quisquam quae ipsum assumenda beatae soluta excepturi quos perspiciatis debitis!</p>
               </div>
-              <div className={``}>
+              <div className={`${styles.InParaImageTXT}`}>
                 <img src={petb} className={`max-w-sm rounded-md `}alt="" />
               </div>
             </div>
