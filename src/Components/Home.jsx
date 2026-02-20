@@ -39,15 +39,20 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className={` m-12`}>
-          <div className={` m-12`}>
-            <div className={`flex gap-5 ${styles.InPara} `}>
-              <div>
-                <h1>hjjhhj</h1>
-                <p className={`text-justify`}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo exercitationem corporis unde consequatur iure quas repellat? Minus dolorem enim fugiat. Quisquam facilis error ullam nulla vero deleniti debitis illo natus beatae architecto eos odio deserunt delectus dignissimos, inventore consectetur laudantium tempore magnam porro officiis quo rerum. Itaque placeat repellat labore neque doloremque, dolor nihil. Similique dignissimos tempore aliquid vero fuga eius accusamus itaque provident, dolor molestiae labore, laboriosam alias placeat et unde? Numquam quibusdam, unde, praesentium laborum laudantium ab error aspernatur aliquam doloribus dicta dolor voluptatibus assumenda consequatur, saepe veritatis quasi. Qui iure vel suscipit aspernatur a totam, mollitia aliquam ducimus architecto illum sunt et blanditiis laudantium voluptatem repellendus similique cum natus dolore neque quasi vitae incidunt. Culpa eaque nesciunt minus quam nisi iusto sed maxime provident optio ea, eligendi sunt laudantium, similique officia, veritatis veniam quasi voluptates error id ex nam. Quae quisquam architecto nemo consequatur! Deleniti fuga corporis voluptatum, eaque neque nulla non voluptatem inventore totam. Dignissimos illum distinctio obcaecati soluta velit alias quam? Sint id odit saepe. Neque laborum rem ducimus? Neque debitis nihil ipsa sunt iste? Sapiente cumque praesentium eaque aperiam molestias ipsa neque veniam voluptate, quisquam quae ipsum assumenda beatae soluta excepturi quos perspiciatis debitis!</p>
+        <div className="my-20 ">
+          <div className="m-4 flex ">
+            <div className={`flex justify-center items-center gap-5 ${styles.InPara}`}>
+              <div className={` ${styles.InParaTXT}`}>
+                <h1 className={`mb-3 font-semibold uppercase text-4xl`}>hjjhhj</h1>
+                <p className="text-justify font-semibold">Lorem ipsum dolor sit igendi illo modi doloremque quam et. Ut atque, iste ipsa reiciendis nobis laudantium. Maiores dicta sunt asperiores ullam quidem molestiae ipsum dolorum architecto quibusdam repudiandae, ut possimus vel blanditiis labore porro iusto obcaecati! Unde excepturi amet provident, animi nostrum iusto totam perferendis fuga et repellendus, tenetur aperiam magni molestias quia blanditiis ad ducimus? Animi, harum maxime quaerat dolores pariatur eius odio. Praesentium dicta pariatur quasi, aliquid veritatis cumque. Odit, eligendi. Explicabo alias ipsam in eos qui ipsa quia magni blanditiis expedita exercitationem! Dolor beatae vitae id iure nisi dignissimos velit, dolorem commodi laboriosam dolores illo veniam obcaecati fuga, laborum ipsam officia, nihil eos optio dicta! Deserunt adipisci modi doloribus earum quam quos?</p>
               </div>
-              <div className={`${styles.InParaImageTXT}`}>
-                <img src={petb} className={`max-w-sm rounded-md `}alt="" />
+
+              <div className={styles.InParaImageTXT}>
+                <img
+                  src={petb}
+                  className="max-w-sm rounded-md block"
+                  alt=""
+                />
               </div>
             </div>
           </div>
