@@ -56,8 +56,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="m-5 flex ">
-            <div className={`flex justify-center items-center gap-5 ${styles.InPara2} ${styles.InPara}`}>
+          <div className={`${styles.InPara2} m-5 flex`}>
+            <div className={`flex justify-center items-center gap-5 ${styles.InPara}`}>
               <div className={`${styles.InParaImageTXT} flex justify-center`}>
                 <img
                   src={petb}
