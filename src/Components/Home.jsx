@@ -40,7 +40,7 @@ export default function Home() {
           </div>
         </div>
         <div className="my-20 flex justify-center flex-col ">
-          <div className="m-5 flex ">
+          <div className={`m-5 flex  `}>
             <div className={`flex justify-center items-center gap-5 ${styles.InPara}`}>
               <div className={` ${styles.InParaTXT}`}>
                 <h1 className={`mb-3 font-semibold uppercase `}>hjjhhj</h1>
