@@ -37,6 +37,16 @@
     align-items: center;
     justify-content: center;
   }
+  .InPara2 .InParaImageTXT .InParaImage{
+    order: 2;
+  }
+  .InPara2 .InParaTXT{
+    order: 1;
+  }
   
-  
+}
+@media (max-width: 360px){
+  .InParaImage{
+    width: 230px;
+  }
 }

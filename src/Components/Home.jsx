@@ -9,10 +9,10 @@ export default function Home() {
     <>
       <NavBar />
 
-      <main className="pt-16">
+      <main className="pt-16 bg-[#0F766E]/30">
         <div className="flex justify-center">
           <div className="relative w-full max-w-7xl px-4 mt-4">
-            <div className="relative h-[60vh] sm:h-[65vh] lg:h-[500px]  rounded-3xl">
+            <div className="relative flex justify-center h-[60vh] sm:h-[65vh] lg:h-[500px]  rounded-3xl">
 
               <img
                 src={Banner}
@@ -39,21 +39,39 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="my-20 ">
-          <div className="m-4 flex ">
+        <div className="my-20 flex justify-center flex-col ">
+          <div className="m-5 flex ">
             <div className={`flex justify-center items-center gap-5 ${styles.InPara}`}>
               <div className={` ${styles.InParaTXT}`}>
-                <h1 className={`mb-3 font-semibold uppercase text-4xl`}>hjjhhj</h1>
-                <p className="text-justify font-semibold">Lorem ipsum dolor sit igendi illo modi doloremque quam et. Ut atque, iste ipsa reiciendis nobis laudantium. Maiores dicta sunt asperiores ullam quidem molestiae ipsum dolorum architecto quibusdam repudiandae, ut possimus vel blanditiis labore porro iusto obcaecati! Unde excepturi amet provident, animi nostrum iusto totam perferendis fuga et repellendus, tenetur aperiam magni molestias quia blanditiis ad ducimus? Animi, harum maxime quaerat dolores pariatur eius odio. Praesentium dicta pariatur quasi, aliquid veritatis cumque. Odit, eligendi. Explicabo alias ipsam in eos qui ipsa quia magni blanditiis expedita exercitationem! Dolor beatae vitae id iure nisi dignissimos velit, dolorem commodi laboriosam dolores illo veniam obcaecati fuga, laborum ipsam officia, nihil eos optio dicta! Deserunt adipisci modi doloribus earum quam quos?</p>
+                <h1 className={`mb-3 font-semibold uppercase `}>hjjhhj</h1>
+                <p className="text-justify  font-semibold">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem laudantium a necessitatibus reiciendis, deleniti aliquid modi perferendis illo repellat est ducimus facilis aspernatur ipsam voluptatum natus cumque. Commodi, deserunt doloribus optio voluptas sapiente, ex iure sunt suscipit exercitationem expedita dolores repellat quos! Illo facere, quia repellendus dolores excepturi atque nam? am quos?</p>
               </div>
 
-              <div className={styles.InParaImageTXT}>
+              <div className={`${styles.InParaImageTXT} flex justify-center`}>
                 <img
                   src={petb}
-                  className="max-w-sm rounded-md block"
+                  className={` ${styles.InParaImage} max-w-sm rounded-md `}
                   alt=""
                 />
               </div>
+            </div>
+          </div>
+          <div className="m-5 flex ">
+            <div className={`flex justify-center items-center gap-5 ${styles.InPara2} ${styles.InPara}`}>
+              <div className={`${styles.InParaImageTXT} flex justify-center`}>
+                <img
+                  src={petb}
+                  className={` ${styles.InParaImage} max-w-sm rounded-md `}
+                  alt=""
+                />
+              </div>
+
+              <div className={` ${styles.InParaTXT}`}>
+                <h1 className={`mb-3 font-semibold uppercase `}>hjjhhj</h1>
+                <p className="text-justify  font-semibold">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem laudantium a necessitatibus reiciendis, deleniti aliquid modi perferendis illo repellat est ducimus facilis aspernatur ipsam voluptatum natus cumque. Commodi, deserunt doloribus optio voluptas sapiente, ex iure sunt suscipit exercitationem expedita dolores repellat quos! Illo facere, quia repellendus dolores excepturi atque nam? am quos?</p>
+              </div>
+
+
             </div>
           </div>
         </div>
