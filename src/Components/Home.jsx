@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from './NavBar';
+import Footer from './Footer'
 import Banner from '../assets/images/Banner.png';
 import petb from '../assets/OIP.webp'
 import styles from '../Styles/Home.module.css';
@@ -75,6 +76,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <Footer></Footer>
       </main>
     </>
   );
