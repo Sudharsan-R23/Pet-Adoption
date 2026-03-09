@@ -45,7 +45,7 @@ export default function Home() {
             <div className={`flex justify-center items-center gap-5 ${styles.InPara} `}>
               <div className={` ${styles.InParaTXT}`}>
                 <h1 className={`mb-3 font-semibold uppercase `}>hjjhhj</h1>
-                <p className="text-justify  font-semibold">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem laudantium a necessitatibus reiciendis, deleniti aliquid modi perferendis illo repellat est ducimus facilis aspernatur ipsam voluptatum natus cumque. Commodi, deserunt doloribus optio voluptas sapiente, ex iure sunt suscipit exercitationem expedita dolores repellat quos! Illo facere, quia repellendus dolores excepturi atque nam? am quos?</p>
+                <p className="text-justify text-lg font-semibold">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem laudantium a necessitatibus reiciendis, deleniti aliquid modi perferendis illo repellat est ducimus facilis aspernatur ipsam voluptatum natus cumque. Commodi, deserunt doloribus optio voluptas sapiente, ex iure sunt suscipit exercitationem expedita dolores repellat quos! Illo facere, quia repellendus dolores excepturi atque nam? am quos?</p>
               </div>
 
               <div className={`${styles.InParaImageTXT} flex justify-center`}>
@@ -69,7 +69,7 @@ export default function Home() {
 
               <div className={` ${styles.InParaTXT}`}>
                 <h1 className={`mb-3 font-semibold uppercase `}>hjjhhj</h1>
-                <p className="text-justify  font-semibold">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem laudantium a necessitatibus reiciendis, deleniti aliquid modi perferendis illo repellat est ducimus facilis aspernatur ipsam voluptatum natus cumque. Commodi, deserunt doloribus optio voluptas sapiente, ex iure sunt suscipit exercitationem expedita dolores repellat quos! Illo facere, quia repellendus dolores excepturi atque nam? am quos?</p>
+                <p className="text-justify text-lg font-semibold">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem laudantium a necessitatibus reiciendis, deleniti aliquid modi perferendis illo repellat est ducimus facilis aspernatur ipsam voluptatum natus cumque. Commodi, deserunt doloribus optio voluptas sapiente, ex iure sunt suscipit exercitationem expedita dolores repellat quos! Illo facere, quia repellendus dolores excepturi atque nam? am quos?</p>
               </div>
 
 
