@@ -6,9 +6,9 @@ export default function
 () {
   return (
     <div>
-        <div className={`p-10 bg-[#0F766E] justify-center content-center flex text-white`}>
+        <div className={`p-15 content-center bg-[#0F766E] justify-center content-center flex text-white`}>
             <h1>Create a family with us | </h1>
-            <div className={`flex ml-1`}>
+            <div className={`flex ml-1 p-1 gap-1`}>
                 < TiSocialYoutube/>
                 <FaSquareInstagram/>
                 <FaEarthAmericas/>
