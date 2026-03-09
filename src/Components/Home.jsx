@@ -2,7 +2,8 @@ import React from 'react';
 import NavBar from './NavBar';
 import Footer from './Footer'
 import Banner from '../assets/images/Banner.png';
-import petb from '../assets/OIP.webp'
+import pet1 from '../assets/OIP.webp';
+import pet2 from '../assets/OIP2.png';
 import styles from '../Styles/Home.module.css';
 
 export default function Home() {
@@ -50,7 +51,7 @@ export default function Home() {
 
               <div className={`${styles.InParaImageTXT} flex justify-center`}>
                 <img
-                  src={petb}
+                  src={pet1}
                   className={` ${styles.InParaImage} max-w-sm rounded-md `}
                   alt=""
                 />
@@ -61,7 +62,7 @@ export default function Home() {
             <div className={`flex justify-center items-center gap-5 ${styles.InPara}`}>
               <div className={`${styles.InParaImageTXT} flex justify-center`}>
                 <img
-                  src={petb}
+                  src={pet2}
                   className={` ${styles.InParaImage} max-w-sm rounded-md `}
                   alt=""
                 />
