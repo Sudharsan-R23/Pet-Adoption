@@ -51,8 +51,8 @@ export default function Home() {
 
               <div className={`${styles.InParaImageTXT} flex justify-center`}>
                 <img
-                  src={pet1}
-                  className={` ${styles.InParaImage} max-w-sm rounded-md `}
+                  src={pet2}
+                  className={` ${styles.InParaImage} max-w-m rounded-md `}
                   alt=""
                 />
               </div>
@@ -63,7 +63,7 @@ export default function Home() {
               <div className={`${styles.InParaImageTXT} flex justify-center`}>
                 <img
                   src={pet2}
-                  className={` ${styles.InParaImage} max-w-sm rounded-md `}
+                  className={` ${styles.InParaImage} max-w-m rounded-md `}
                   alt=""
                 />
               </div>
