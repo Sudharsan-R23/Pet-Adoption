@@ -8,6 +8,9 @@ export default function Shop() {
        <NavBar/>
         <div className={`m-20`}>
             <h1 className={`font-sans`}>Shop</h1>
+            <div>
+                                         
+            </div>
         </div>
         </>
     
